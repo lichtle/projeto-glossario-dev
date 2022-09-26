@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/imagens/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    /> <!-- Fonte personalizada -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      /> <!-- Animações CSS -->
+      <link rel="stylesheet" href="./src/css/style.css">
+      <link rel="stylesheet" href="./src/css/responsivo.css">
+    <title>Glossário Dev</title>
+  </head>
+  <body>
+    <div class="container-principal">
+      <div class="container centralizar">
+        <!-- Container da esquerda. -->
+        <!-- Classe "container" engloba os containers da esquerda e da direita para aplicar a mesma configuração de tamanho pras duas (para que cada div/container ocupe 50% da página). -->
+        <div class="principal">
+          <!-- Box contendo as infos principais (título com logo, descrição, instruções e botões) -->
+          <h1 class="principal-logo">&#x1F4DA Glossário Dev</h1>
+          <h2 class="principal-titulo">Uma forma dinâmica de fixar seus conhecimentos em programação!</h2>
+          <p class="principal-descricao">
+            No card ao lado você encontrará termos técnicos utilizados no dia a dia de
+            um desenvolvedor. Clique nos botões abaixo para ir para o próximo termo ou revelar sua definição.
+          </p>
+          <div class="botoes">
+            <button onclick="buscarInfos()" class="botao">Próximo termo</button>
+            <button onclick="revelarResposta()" class="botao">Revelar definição</button> <!-- O atributo onclick define uma ação a ocorrer quando clicamos no elemento. Nesse caso, a ação será uma função criada com JS, a qual retornará um novo card -->
+          </div>
+        </div>
+      </div> 
+
+      <div id="pergunta" class="container centralizar">
+        <!-- Container da direita -->
+        <div class="card">
+          <!-- Card (container) contendo termo e definição. O código HTML a partir dessa linha está no documento JS como template. Ele foi removido do documento HTML para que, ao invés de sempre aparecer o mesmo primeiro termo ao acessarmos a página, sermos recebidos com algum termo aleatório, comportamento dinâmico permitido pelo JS. Importante lembrar que essa estrutura HTML precisa ser construída primeiro e depois que o dinamismo estiver como desejado, ela pode ser removida. -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/js/script.js"></script>
+</html>

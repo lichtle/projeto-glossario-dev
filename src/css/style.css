@@ -1,0 +1,88 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../imagens/3.jpg"); /* Background: https://unsplash.com/photos/DX7pT_guAyE */
+  background-size: cover;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-principal {
+  display: flex;
+  height: 95vh;
+}
+
+.container {
+  width: 90%;
+}
+
+.centralizar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.principal {
+  padding: 8rem;
+}
+
+.principal-logo {
+  font-size: 4rem;
+}
+
+.principal-titulo {
+  font-size: 2rem;
+}
+
+.principal-descricao {
+  margin: 3rem 0;
+}
+
+.botao {
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 100%;
+  height: 6rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 7px 7px 20px #000000;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  max-width: 55rem;
+  border-radius: 0.8rem;
+  box-shadow: 7px 7px 20px #000000;
+  overflow: hidden; /* Indica que tudo que ultrapassar o container card ficará escondido (nesse caso, o cabeçalho do card está ultrapassando o container total do card, fazendo-se necessária a utilização dessa propriedade). */
+}
+
+.card-cabecalho {
+  background-color: #6d72c3;
+  height: 15rem; /* Esta altura ultrapassará a altura total do card inteiro. Para isso utilizamos a propriedade overflow: hidden no container que engloba o elemento ultrapassante. */
+}
+
+.card-termo {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.card-definicao {
+  color: #000000;
+  padding: 3rem;
+}
+
+.embacar {
+  filter: blur(5px);
+}
